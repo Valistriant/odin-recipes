@@ -2,10 +2,36 @@ h1 {
     color: yellowgreen;
 }
 
-/*li {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General box sizing for all items on page. In this case it is targeting my list items.
+li {
     width: 100px;
     padding: 10px;
     border: 5px solid black;
     box-sizing: border-box;
   } */
   
+  /* Red Outline to see the borders for all the boxes on page
+  * {
+    border: 1px solid red;
+  }
+    */
