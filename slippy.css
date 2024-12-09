@@ -1,12 +1,32 @@
-h1 { 
-    color: yellowgreen;
+.flex-container {
+    display: flex; /* Enable Flexbox */
+    gap: 20px; /* Space between items */
+    list-style: none; /* Remove default list styling*/
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    justify-content: space-between; /* Distribute items across the container */
+    align-items: center; /* Align items vertically */
+}
+
+.header {
+    background-color:cyan;
+    display: flex;
+    justify-content: center; /* Center the child wrapper horizontally */
+    align-items: center; /* Center the child wrapper vertically */
+    height: 100px;
+}
+
+header-content {
+    text-align: center; /* Center text inside the child wrapper */
 }
 
 .item {
-    margin: 10px;
+    flex: 1; /* Flex items will equally divide available space */
+    margin: 10px; /* Optional: Additional spacing */
     padding: 10px 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center; /* Center text inside items */
     transition: transform 0.3s;
 }
 
@@ -17,7 +37,7 @@ h1 {
 
 .red-wine-braised-beef {
     background-color: #e6e0f8; /* Light purple */
-    color: #4b0082; /* Indigo text */       
+    color: #4b0082; /* Indigo text */
 }
 
 .caribbean-fried-red-snapper {
