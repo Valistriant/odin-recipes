@@ -1,5 +1,6 @@
 .flex-container {
     display: flex; /* Enable Flexbox */
+    flex-direction: column;
     gap: 20px; /* Space between items */
     list-style: none; /* Remove default list styling*/
     padding: 0; /* Remove default padding */
@@ -9,15 +10,26 @@
 }
 
 .header {
-    background-color:cyan;
     display: flex;
     justify-content: center; /* Center the child wrapper horizontally */
     align-items: center; /* Center the child wrapper vertically */
     height: 100px;
+    opacity: 0.85
 }
 
 header-content {
     text-align: center; /* Center text inside the child wrapper */
+}
+
+html, body {
+    height: 100%; /* Ensure the <html> and <body> elements take up the full viewport height */
+    margin: 0; /* Remove default margin to prevent whitespace */
+
+body {
+    background-image: url('images/Background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .item {
@@ -30,19 +42,39 @@ header-content {
     transition: transform 0.3s;
 }
 
-.mashed-potatoes {
-    background-color: #f8e6e0; /* Light beige */
-    color: #a52a2a; /* Brown text */
+.mashed-potatoes a {
+    display: block; /* Makes the <a> tag behave like a block element */
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherit text color */
+    height: 100%; /* Make sure the <a> tag takes up the full height of the .item */
+    width: 100%; /* Make sure the <a> tag takes up the full width of the .item */
+ 
 }
 
-.red-wine-braised-beef {
-    background-color: #e6e0f8; /* Light purple */
-    color: #4b0082; /* Indigo text */
+.red-wine-braised-beef a {
+    display: block; /* Makes the <a> tag behave like a block element */
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherit text color */
 }
 
-.caribbean-fried-red-snapper {
-    background-color: #e0f7fa; /* Light cyan */
-    color: #00796b; /* Teal text */
+.caribbean-fried-red-snapper a {
+    display: block; /* Makes the <a> tag behave like a block element */
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherit text color */
+}
+
+body.red-wine-braised-beef-page {
+    background-image: url('images/bird.webp');
+    background-size: 50%; /* Scales image to half its size */
+}
+
+body.mashed-potatoes-page {
+    background-image: url('images/bird.webp');
+    background-size: 50%; /* Scales image to half its size */
+}
+
+body.caribbean-fried-red-snapper-page {
+    background-image: url('images/bird.webp');
 }
 
 /* General box sizing for all items on page. In this case it is targeting my list items.
